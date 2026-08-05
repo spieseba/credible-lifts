@@ -3,7 +3,7 @@ FROM ghcr.io/astral-sh/uv:python3.14-trixie-slim
 
 # Setup workspace
 WORKDIR /app
-COPY pyproject.toml uv.lock ./
+COPY pyproject.toml uv.lock README.md ./
 COPY src ./src
 RUN uv sync --locked
 
