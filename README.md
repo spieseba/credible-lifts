@@ -1,4 +1,5 @@
 # credible-lifts
+![CI](https://github.com/spieseba/credible-lifts/actions/workflows/ci.yml/badge.svg)
 
 Forecasting Olympic weightlifting totals with *credible* intervals.
 
