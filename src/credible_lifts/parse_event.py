@@ -1,7 +1,7 @@
 from pathlib import Path
-from bs4 import BeautifulSoup
-import pandas as pd
 
+import pandas as pd
+from bs4 import BeautifulSoup
 
 # parse card
 FIELDS_SNATCHJERK = ["rank", "name", "nation", "born", "bodyweight", "group", "attempt-1", "attempt-2", "attempt-3", "total"]

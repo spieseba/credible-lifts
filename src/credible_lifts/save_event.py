@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import requests
 
 url = "https://iwf.sport/results/results-by-events/"
