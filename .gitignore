@@ -3,7 +3,7 @@ PLAN.md
 notes.txt
 
 # Raw-HTML scrape cache 
-data/raw/
+data/
 
 # Python-generated files
 __pycache__/
