@@ -31,6 +31,15 @@ def text_or_none(cell):
         return cell
     return cell.get_text(" ", strip=True)
 
+def parse_birthdate_gender(text):
+    m = re.match(r"Date of birth:\s*([\d-]+)\s+'?([MK])'?", text) if text else None
+    if m:
+        birthdate, gender = m.group(1), m.group(2)
+        if gender == "K":
+            gender = "W"
+        return birthdate, gender
+    return None, None
+
 if __name__ == "__main__":
     rows = []
     rows_seen = 0
@@ -43,13 +52,7 @@ if __name__ == "__main__":
         description, headers = athlete_description(soup)
         idx = {header: i for i,header in enumerate(headers)}
         birthdate_gender = text_or_none(cell("Date of birth", description, idx))
-        m = re.match(r"Date of birth:\s*([\d-]+)\s+'?([MK])'?", birthdate_gender) if birthdate_gender else None
-        if m:
-            birthdate, gender = m.group(1), m.group(2)
-            if gender == "K":
-                gender = "W"
-        else:
-            birthdate = gender = None
+        birthdate, gender = parse_birthdate_gender(birthdate_gender)
         nation_raw = text_or_none(cell("Nation", description, idx))
         nation = nation_raw.split(":")[1].strip() if nation_raw else None
         row = {
