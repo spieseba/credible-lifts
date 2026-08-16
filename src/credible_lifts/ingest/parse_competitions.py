@@ -90,7 +90,7 @@ if __name__ == "__main__":
                     "rank": num(rank_txt), 
                     "athlete_id": athlete_id(tr), "athlete_name": text_or_none(cell("Athlete", tds, idx)), 
                     "gender": "M" if category.startswith("M ") else "W" if category.startswith("W ") else None,
-                    "country": text_or_none(cell("Country", tds, idx)), 
+                    "nation": text_or_none(cell("Country", tds, idx)), 
                     "club": text_or_none(cell("Club", tds, idx)), 
                     "bodyweight": num_of(cell("Weight", tds, idx)), 
                     "sn1": attempt(cell("Sn1", tds, idx)), 
