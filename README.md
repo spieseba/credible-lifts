@@ -24,7 +24,7 @@ Some quirks of the data:
 
 ## API
 
-A dummy is deployed on Cloud Run: the endpoint is reachable, the prediction is a placeholder (mean of recent totals ± fixed margin) until a model lands.
+A dummy is deployed on Cloud Run: the endpoint is reachable, the prediction is a placeholder (mean of recent totals ± fixed margin):
 
 ```bash
 curl -X POST https://credible-lifts-uqy2r54oza-ew.a.run.app/predict \
