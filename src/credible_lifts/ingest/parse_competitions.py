@@ -96,7 +96,7 @@ if __name__ == "__main__":
                     "sn1": attempt(cell("Sn1", tds, idx)), 
                     "sn2": attempt(cell("Sn2", tds, idx)),
                     "sn3": attempt(cell("Sn3", tds, idx)),
-                    "best_snatch": num_of(cell("MAX Sn", tds, idx)),
+                    "best_sn": num_of(cell("MAX Sn", tds, idx)),
                     "cj1": attempt(cell("CJ1", tds, idx)),  
                     "cj2": attempt(cell("CJ2", tds, idx)),   
                     "cj3": attempt(cell("CJ3", tds, idx)),
