@@ -1,7 +1,7 @@
 # credible-lifts
 ![CI](https://github.com/spieseba/credible-lifts/actions/workflows/ci.yml/badge.svg)
 
-The goal of this project is to quantitatively model real Olympic weightlifting performances from messy longitudinal data. 
+The goal of this project is to quantitatively model Olympic weightlifting performances from real longitudinal data. 
 
 Can past competition results predict an athlete's next total (Snatch + Clean & Jerk) and how well? 
 
