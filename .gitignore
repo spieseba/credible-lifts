@@ -19,3 +19,5 @@ wheels/
 # MacOS
 .DS_Store
 
+# Archive
+archive/
